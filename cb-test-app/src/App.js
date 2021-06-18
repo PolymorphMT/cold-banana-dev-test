@@ -3,7 +3,9 @@ import { AppBar, Container } from "@material-ui/core";
 // import ReactDOM from 'react-dom';
 import './index.css';
 import './App.css';
-import HeaderComponent from './header';
+import HeaderComponent from './navigation';
+import HomePage from './HomePage'
+import ContactPage from './ContactPage'
 
 export default class App extends React.Component {
     render() {
@@ -15,7 +17,7 @@ export default class App extends React.Component {
                     />
                 </AppBar>
                 <Container>
-                    <p>Hello</p>
+                    <HomePage />
                 </Container>
             </div>
         )
