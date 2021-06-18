@@ -3,21 +3,21 @@
 }
 
 .App-Background {
-  background-color: #282c34;
+  background-color: #EAE1F4;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #779BE7;
 }
 
 .App-header {
-  background-color: ghostwhite;
+  background-color: #779BE7;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   justify-content: center;
-  color: black;
+  color: #00253D;
 }
