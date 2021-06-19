@@ -4,12 +4,14 @@ import {Container, Card, CardMedia, CardContent, Typography, CardActionArea} fro
 import './index.css';
 import './App.css';
 import FamiliarImg from "./images/familiar.jpg"
+import MordIcon from './images/circle4.svg';
 
 export default class HomePage extends React.Component {
     render() {
         return (
             <Container className="App-Page">
-                <h1>This is the Mordenkainen Institute</h1>
+                {mordenkainenLogo}
+                <img src={MordIcon} alt="Mordenkainen Institute Logo" width={"50px"} height={"50px"} color="inherit"/>
                 <Card className="Familiar-Img">
                     <CardActionArea>
                         <CardMedia className="media" image={FamiliarImg} alt={"A summoned magical familiar with toad-like features, sat " +
@@ -31,3 +33,8 @@ export default class HomePage extends React.Component {
         )
     }
 }
+const mordenkainenLogo = (
+    <Typography variant="h6" component="h1">
+        Mordenkainen Institute
+    </Typography>
+);

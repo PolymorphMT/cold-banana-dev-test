@@ -6,28 +6,25 @@
   background-color: #FFC2DD;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  /*flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center;*/
   font-size: calc(10px + 2vmin);
   color: #779BE7;
 }
 
-.App-header {
+.App-Nav {
   background-color: #779BE7;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
+  /*flex-direction: row;
+  align-items: flex-start;*/
   color: #00253D;
-  padding-left: 50px;
-  padding-right: 50px;
   flex-grow: 1;
+
 }
 
 .App-Page {
   background-color: #EAE1F4;
-  min-height: 85vh;
   display: flex;
   font-size: calc(10px + 2vmin);
   color: #779BE7;
