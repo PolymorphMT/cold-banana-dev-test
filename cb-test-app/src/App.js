@@ -1,6 +1,5 @@
 import React from 'react';
 import { Typography } from "@material-ui/core";
-// import ReactDOM from 'react-dom';
 import './index.css';
 import './App.css';
 import NavPage from './navigation';

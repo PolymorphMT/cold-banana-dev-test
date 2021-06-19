@@ -1,5 +1,5 @@
 import React from "react";
-import {Container, Card, CardMedia, CardContent, Typography, CardActionArea, TextareaAutosize} from "@material-ui/core";
+import {Container, Card, CardMedia, CardContent, Typography, CardActionArea} from "@material-ui/core";
 import './index.css';
 import './App.css';
 import FamiliarImg from "./images/familiar.jpg"

@@ -1,11 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Toolbar, Typography, Button, AppBar, IconButton, Tabs, Tab, Box, Paper} from "@material-ui/core";
-//import ReactDOM from 'react-dom';
+import {Typography, AppBar, Tabs, Tab, Box, Paper} from "@material-ui/core";
 import './index.css';
 import './App.css';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import MenuIcon from '@material-ui/icons/Menu';
 import HomePage from './HomePage'
 import ContactPage from './ContactPage'
 import { styled, createMuiTheme } from '@material-ui/core/styles';
