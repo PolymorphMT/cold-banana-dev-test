@@ -8,6 +8,33 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import MenuIcon from '@material-ui/icons/Menu';
 import HomePage from './HomePage'
 import ContactPage from './ContactPage'
+import { styled, createMuiTheme } from '@material-ui/core/styles';
+
+const StyledTabs = styled(Tabs)({
+    background: 'linear-gradient(to right, #00253D, #8B5BC2, #FFC2DD)',
+    border: 0,
+    borderRadius: 3,
+    color: 'white',
+    height: 48,
+    padding: '0 30px',
+});
+
+const theme = createMuiTheme({
+    palette: {
+        primary: {
+            light: '#FFC2DE',
+            main: '#FF1F87',
+            dark: '#3D001C',
+            contrastText: '#00253D',
+        },
+        secondary: {
+            light: '#C2E7FF',
+            main: '#1FA5FF',
+            dark: '#00253D',
+            contrastText: '#FF1F87',
+        },
+    },
+});
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -52,10 +79,11 @@ export default function Navigation() {
     return (
         <div className="App-Nav">
             <AppBar>
-                <Tabs value={value} onChange={handleChange} aria-label="website navigation">
+                <StyledTabs value={value} onChange={handleChange} aria-label="website navigation" textColor="white"
+                indicatorColor="secondary">
                     <Tab label="Home" {...a11yProps(0)} />
                     <Tab label="Contact" {...a11yProps(1)} />
-                </Tabs>
+                </StyledTabs>
             </AppBar>
             <TabPanel value={value} index={0}>
                 <Paper elevation={3}>

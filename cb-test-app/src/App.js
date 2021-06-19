@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppBar, Container } from "@material-ui/core";
+import { Typography } from "@material-ui/core";
 // import ReactDOM from 'react-dom';
 import './index.css';
 import './App.css';
@@ -15,7 +15,7 @@ export default class App extends React.Component {
                 />
             </div>
                 <div className="App-Footer">
-                    <h1>this is the footer</h1>
+                    <Typography variant="h6" component="h1">Footer</Typography>
                 </div>
         </div>
         )
