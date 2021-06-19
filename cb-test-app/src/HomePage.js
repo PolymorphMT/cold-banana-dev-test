@@ -10,31 +10,35 @@ export default class HomePage extends React.Component {
     render() {
         return (
             <Container className="App-Page">
-                {mordenkainenLogo}
-                <img src={MordIcon} alt="Mordenkainen Institute Logo" width={"50px"} height={"50px"} color="inherit"/>
-                <Card className="Familiar-Img">
-                    <CardActionArea>
-                        <CardMedia className="media" image={FamiliarImg} alt={"A summoned magical familiar with toad-like features, sat " +
-                        "in a wizard's tome"} />
-                        <CardContent>
-                            <Typography gutterBottom variant="h5" component="h2">
-                                An example familiar
-                            </Typography>
-                            <Typography variant="body2" color="textSecondary" component="p">
-                                A summoned magical familiar with toad-like features, sat in a wizard's tome.
-                            </Typography>
-                            {/*<Typography variant="body3">*/}
-                            {/*    Art sourced from: https://www.artstation.com/artwork/1BAG2*/}
-                            {/*</Typography>*/}
-                        </CardContent>
-                    </CardActionArea>
-                </Card>
+                <div className="Content">
+                    {mordenkainenLogo}
+                    <Card>
+                        <CardActionArea>
+                            <CardMedia image={FamiliarImg} alt={"A summoned magical familiar with toad-like features, sat " +
+                            "in a wizard's tome"} />
+                            <CardContent>
+                                <Typography gutterBottom variant="h5" component="h2">
+                                    An example familiar
+                                </Typography>
+                                <Typography variant="body2" color="textSecondary" component="p">
+                                    A summoned magical familiar with toad-like features, sat in a wizard's tome.
+                                </Typography>
+                                {/*<Typography variant="body3">*/}
+                                {/*    Art sourced from: https://www.artstation.com/artwork/1BAG2*/}
+                                {/*</Typography>*/}
+                            </CardContent>
+                        </CardActionArea>
+                    </Card>
+                </div>
             </Container>
         )
     }
 }
 const mordenkainenLogo = (
-    <Typography variant="h6" component="h1">
-        Mordenkainen Institute
-    </Typography>
+    <div>
+        <Typography variant="h6" component="h1">
+            Mordenkainen Institute
+        </Typography>
+        <img src={MordIcon} alt="Mordenkainen Institute Logo" width={"150vw"} color="inherit"/>
+    </div>
 );

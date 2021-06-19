@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Toolbar, Typography, Button, AppBar, IconButton, Tabs, Tab, Box} from "@material-ui/core";
+import {Toolbar, Typography, Button, AppBar, IconButton, Tabs, Tab, Box, Paper} from "@material-ui/core";
 //import ReactDOM from 'react-dom';
 import './index.css';
 import './App.css';
@@ -52,20 +52,20 @@ export default function Navigation() {
     return (
         <div className="App-Nav">
             <AppBar>
-                <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
+                <Tabs value={value} onChange={handleChange} aria-label="website navigation">
                     <Tab label="Home" {...a11yProps(0)} />
                     <Tab label="Contact" {...a11yProps(1)} />
-                    <Tab label="Other" {...a11yProps(2)} />
                 </Tabs>
             </AppBar>
             <TabPanel value={value} index={0}>
-                <HomePage />
+                <Paper elevation={3}>
+                    <HomePage />
+                </Paper>
             </TabPanel>
             <TabPanel value={value} index={1}>
-                <ContactPage />
-            </TabPanel>
-            <TabPanel value={value} index={2}>
-                Item Three
+                <Paper elevation={3}>
+                    <ContactPage />
+                </Paper>
             </TabPanel>
     </div>
     )
