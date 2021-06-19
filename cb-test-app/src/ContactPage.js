@@ -4,7 +4,7 @@ import React from "react";
 import TextField from '@material-ui/core/TextField';
 import './index.css';
 import './App.css';
-import {Container} from "@material-ui/core";
+import {Button, Container} from "@material-ui/core";
 
 export default class ContactPage extends React.Component {
     render() {
@@ -30,6 +30,8 @@ export default class ContactPage extends React.Component {
                             margin="normal"
                             fullWidth
                         />
+                        <Button onClick={() => { alert('Sent') }} variant="contained" color="primary"
+                                size="large">Send</Button>
                     </form>
                 </div>
             </Container>
